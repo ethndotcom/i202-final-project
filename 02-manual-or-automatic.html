@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>02 · Manual or Automatic? Disciplinary or Persuasive?</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-section="02">
+
+  <div class="progress" aria-hidden="true"><div class="bar"></div></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html"><span class="amp">§</span> Algorithmic Hiring</a>
+      <ul class="nav-list">
+        <li><a href="01-introduction.html"      data-section="01"><span class="num">01</span> Intro</a></li>
+        <li><a href="02-manual-or-automatic.html" data-section="02"><span class="num">02</span> Manual / Auto</a></li>
+        <li><a href="03-infrastructure.html"    data-section="03"><span class="num">03</span> Infrastructure</a></li>
+        <li><a href="04-power.html"             data-section="04"><span class="num">04</span> Power</a></li>
+        <li><a href="05-black-box.html"         data-section="05"><span class="num">05</span> Black Box</a></li>
+        <li><a href="06-outcomes.html"          data-section="06"><span class="num">06</span> Outcomes</a></li>
+        <li><a href="07-usefulness.html"        data-section="07"><span class="num">07</span> Reflection</a></li>
+        <li><a href="08-works-cited.html"       data-section="08"><span class="num">08</span> Sources</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <span class="watermark" aria-hidden="true">02</span>
+      <div>
+        <div class="eyebrow reveal d1">Chapter 02</div>
+        <h1 class="reveal d2">Manual or <em>Automatic?</em><br/>Disciplinary or <em>Persuasive?</em></h1>
+      </div>
+      <div class="meta-block reveal d3">
+                Models · Algorithms · Architecture
+      </div>
+    </header>
+
+    <article class="prose">
+      <h2><span class="num">§ 2.1</span>What Is Manual vs. What Is Automated</h2>
+
+      <p class="dropcap">
+        In the week 7 lectures on algorithms and architectures, Dr. Jake defined
+        a model as <em>"an abstract representation of some process"</em>
+        (citing O'Neil; Course slides, Week 7, slide 54) and an algorithm as
+        <em>"a computerized analysis that makes use of a mathematical
+        representation of a process (model) to analyze data and suggest an
+        outcome"</em> (Course slides, Week 7, slide 46). Algorithmic hiring is
+        exactly this: models of "the successful candidate" are built from
+        historical data, and algorithms use those models to score, rank, and
+        filter live applications.
+      </p>
+
+      <h3>Automated</h3>
+      <ul>
+        <li>Resume parsing — extracting name, education, experience, and skills from the uploaded file.</li>
+        <li>Keyword matching and weighting against the job description.</li>
+        <li>Initial ranking or filtering of candidates (reject, hold, or advance).</li>
+        <li>Disqualification based on knockout questions (work authorization, GPA thresholds, years of experience).</li>
+        <li>In video interviews: transcription of responses, linguistic analysis, scoring against a trained model, and (formerly) facial expression analysis.</li>
+        <li>Sending the automated rejection email — or, more often, sending nothing at all and leaving the applicant in silence.</li>
+      </ul>
+
+      <h3>Manual <span class="subtle">(in theory, if you clear the filter)</span></h3>
+      <ul>
+        <li>Recruiter review of the algorithmically-approved shortlist.</li>
+        <li>Phone screens and live interviews.</li>
+        <li>Final hire decisions.</li>
+      </ul>
+
+      <div class="callout fade-in">
+        <strong>The sociotechnical point</strong> — for the majority of applicants, the hiring
+        process is entirely automated. No human ever sees the resume. The
+        one-hour rejection I received is the clearest possible proof: no human
+        read those materials and decided I was not qualified inside of sixty
+        minutes. In my experience, the "manual" stage never began — zero out of
+        more than fifty ATS-screened applications advanced to a human.
+      </div>
+
+      <h2><span class="num">§ 2.2</span>Disciplinary &amp; Persuasive Architecture</h2>
+
+      <p>
+        Dr. Jake defined <strong>disciplinary architecture</strong> as
+        <em>"an object or system that, through its design, directly regulates or
+        controls behavior or human action,"</em> using the example of a brick
+        wall that cannot be run through or a locked door that cannot be pushed
+        open (Course slides, Week 7, slide 33). He defined
+        <strong>persuasive architecture</strong>, by contrast, as something
+        <em>"designed to provoke, suggest, or discourage actions for people to
+        take"</em> — designs that sway behavior but do not force it
+        (Course slides, Week 7, slide 34). Algorithmic hiring uses both.
+      </p>
+
+      <h4>Disciplinary architecture</h4>
+
+      <p>
+        The ATS itself is disciplinary architecture. If your resume does not
+        contain the right keywords, or if it fails to parse correctly (bad
+        formatting, images, tables, unusual fonts), you are removed from the
+        pipeline with no option to appeal, explain, or try again for that role.
+        The system simply refuses, exactly the way the brick wall in Dr. Jake's
+        example refuses to be run through.
+      </p>
+
+      <p>
+        Similarly, the one-way video interview is disciplinary in format: you
+        cannot ask clarifying questions, you cannot negotiate the time limit,
+        and you cannot opt out without withdrawing your application entirely.
+      </p>
+
+      <h4>Persuasive architecture</h4>
+
+      <p>
+        The ecosystem surrounding the ATS is persuasive. LinkedIn's "skills"
+        feature nudges you to list keywords that match employer search queries.
+        University career centers and resume-writing guides encourage students
+        to mirror the job description's language. "ATS-friendly resume"
+        templates circulate online, steering applicants toward specific
+        formats. None of these things <em>force</em> anyone to do anything, but
+        they shape behavior in the direction the system prefers.
+      </p>
+
+      <blockquote class="fade-in">
+        Students learn to write resumes for robots, not humans.
+      </blockquote>
+
+      <p>
+        This is mutual shaping in action — the theoretical lens Dr. Jake
+        introduced in week 3: the technology shapes the social practice of
+        applying for jobs, and the social practice in turn shapes how the
+        technology evolves (Course slides, Week 3).
+      </p>
+
+      <h2><span class="num">§ 2.3</span>Algorithms &amp; the Shape of Action</h2>
+
+      <p>
+        Dr. Jake emphasized in week 7 that algorithms, just like physical
+        architecture and infrastructure, both allow for and limit human action
+        (Course slides, Week 6, slide 2; Week 7, slide 48). The ATS illustrates
+        this directly. It affords employers the ability to screen thousands of
+        applications in seconds. That same ATS affords applicants almost
+        nothing: no transparency, no feedback, no appeal. The one-way video
+        interview affords the employer standardized data — every candidate
+        answers the same question in the same time — but strips from the
+        candidate the things a normal interview allows for: rapport,
+        clarification, the ability to read the room.
+      </p>
+
+      <p>
+        The same object allows one group to do much more while simultaneously
+        limiting what the other group can do.
+      </p>
+
+      <span class="rule short"></span>
+    </article>
+
+    <nav class="pager" aria-label="Section navigation">
+      <a href="01-introduction.html" class="prev">
+        <span class="dir">← Chapter 01</span>
+        <span class="title">Introduction</span>
+      </a>
+      <a href="03-infrastructure.html" class="next">
+        <span class="dir">Chapter 03 →</span>
+        <span class="title">Infrastructure</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <span>Ethan Pairitz · INFO&middot;I 202 · Spring 2026</span>
+    <span><a href="index.html">↑ Back to title</a></span>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

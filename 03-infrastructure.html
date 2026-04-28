@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>03 · The Infrastructure of the System</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    /* sociotechnical flower diagram */
+    .flower-figure {
+      margin: 3rem -2rem;
+      padding: 2.5rem 1rem 2rem;
+      background: var(--paper-deep);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      text-align: center;
+    }
+    .flower-figure svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+    .flower-figure figcaption {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      margin-top: 1.4rem;
+      max-width: 30rem;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+    .flower-figure figcaption strong { color: var(--ink); }
+
+    .flower-petal { fill: var(--paper); stroke: var(--ink); stroke-width: 1.2; transition: fill 0.3s ease; }
+    .flower-petal:hover { fill: #ecd9c8; }
+    .flower-label { font-family: var(--mono); font-size: 11px; font-weight: 500; fill: var(--ink); letter-spacing: 0.04em; text-transform: uppercase; pointer-events: none; }
+    .flower-center { fill: var(--accent); stroke: var(--ink); stroke-width: 1.5; }
+    .flower-center-label { font-family: var(--display); font-style: italic; font-size: 13px; fill: var(--paper); pointer-events: none; }
+  </style>
+</head>
+<body data-section="03">
+
+  <div class="progress" aria-hidden="true"><div class="bar"></div></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html"><span class="amp">§</span> Algorithmic Hiring</a>
+      <ul class="nav-list">
+        <li><a href="01-introduction.html"      data-section="01"><span class="num">01</span> Intro</a></li>
+        <li><a href="02-manual-or-automatic.html" data-section="02"><span class="num">02</span> Manual / Auto</a></li>
+        <li><a href="03-infrastructure.html"    data-section="03"><span class="num">03</span> Infrastructure</a></li>
+        <li><a href="04-power.html"             data-section="04"><span class="num">04</span> Power</a></li>
+        <li><a href="05-black-box.html"         data-section="05"><span class="num">05</span> Black Box</a></li>
+        <li><a href="06-outcomes.html"          data-section="06"><span class="num">06</span> Outcomes</a></li>
+        <li><a href="07-usefulness.html"        data-section="07"><span class="num">07</span> Reflection</a></li>
+        <li><a href="08-works-cited.html"       data-section="08"><span class="num">08</span> Sources</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <span class="watermark" aria-hidden="true">03</span>
+      <div>
+        <div class="eyebrow reveal d1">Chapter 03</div>
+        <h1 class="reveal d2">The <em>Infrastructure</em> of the System</h1>
+      </div>
+      <div class="meta-block reveal d3">
+                Artifacts · Norms · Practices · Law
+      </div>
+    </header>
+
+    <article class="prose">
+      <h2><span class="num">§ 3.1</span>Social &amp; Technical Infrastructure</h2>
+
+      <p class="dropcap">
+        Dr. Jake defined infrastructure in week 6 as <em>"elements of a built
+        environment that make human society possible,"</em> describing it as
+        <em>"a system of substrates, often invisible until made visible via
+        problems, workarounds, or other forms of human activity"</em>
+        (Course slides, Week 6, slide 1). Algorithmic hiring runs on both
+        technical and social infrastructure, and its invisibility is one of
+        the reasons it is so hard to contest.
+      </p>
+
+      <dl class="deflist fade-in">
+        <div class="item"><dt>Digital artifacts</dt><dd>Cloud-hosted ATS platforms (Workday, Greenhouse, iCIMS, Lever, Taleo) running on AWS, Azure, or Google Cloud. Resume-parsing libraries and natural language processing models. Machine learning models trained on historical hiring data. Video recording and streaming infrastructure for asynchronous interviews. Speech-to-text and linguistic analysis APIs. Candidate profile databases, often retained indefinitely and shared across employers using the same vendor. Integration layers between ATS, LinkedIn, Indeed, and corporate career sites.</dd></div>
+
+        <div class="item"><dt>Material artifacts</dt><dd>The servers in data centers that run the ATS and video interview platforms. The applicant's own laptop, webcam, microphone, and the home or dorm environment they are required to record in. The physical office space of the company where the successful candidate will eventually work — which the algorithm has decided who does and does not enter.</dd></div>
+
+        <div class="item"><dt>Social norms</dt><dd>Widespread acceptance in HR that high-volume roles require algorithmic screening. The normalization of ghosting — applicants no longer expect a rejection letter. The disappearance of the thank-you note as a professional expectation.</dd></div>
+
+        <div class="item"><dt>Social practices</dt><dd>Student resume-tailoring for the algorithm rather than the recruiter. Applying to fifty or one hundred jobs as a standard practice. Performing a particular affect on camera because a model is scoring it.</dd></div>
+
+        <div class="item"><dt>Laws &amp; policies</dt><dd>Title VII of the Civil Rights Act, prohibiting discrimination in employment. The Americans with Disabilities Act (ADA), which interacts awkwardly with one-way video interviews that penalize atypical affect or speech. NYC Local Law 144 (2021), which requires bias audits of automated employment decision tools. Illinois's Artificial Intelligence Video Interview Act. The EU's AI Act, which designates employment algorithms as high-risk systems.</dd></div>
+      </dl>
+
+      <h2><span class="num">§ 3.2</span>The Sociotechnical Flower</h2>
+
+      <p>
+        The sociotechnical flower is the I202-specific tool Dr. Jake gave us in
+        week 3 to decompose a sociotechnical problem into its
+        stakeholder-centered components (Course slides, Week 3). Applied to
+        algorithmic hiring, the flower organizes as follows: stakeholders at
+        the center, with petals for each kind of artifact, practice, norm, and
+        policy. No petal can be removed without changing what the technology
+        does in practice.
+        That is the sociotechnical lens in one image.
+      </p>
+
+      <figure class="flower-figure fade-in">
+        <svg viewBox="0 0 540 540" role="img" aria-labelledby="flower-title flower-desc" data-flower>
+          <title id="flower-title">Sociotechnical flower for algorithmic hiring</title>
+          <desc id="flower-desc">A diagram with Stakeholders at the center surrounded by five petals: digital artifacts, material artifacts, social practices, social norms, and laws and policies. Hover any petal for detail.</desc>
+
+          <g transform="translate(270, 270)">
+            <!-- Petal 1: top -->
+            <g transform="rotate(0)">
+              <ellipse class="flower-petal" cx="0" cy="-140" rx="78" ry="120"
+                data-label="Digital artifacts"
+                data-detail="Cloud-hosted ATS platforms (Workday, Greenhouse, iCIMS, Lever, Taleo). Resume-parsing libraries and NLP models. Machine learning models trained on historical hiring data. Video recording and streaming infrastructure. Speech-to-text and linguistic scoring APIs. Candidate profile databases retained indefinitely."/>
+              <text class="flower-label" x="0" y="-155" text-anchor="middle">Digital</text>
+              <text class="flower-label" x="0" y="-138" text-anchor="middle">artifacts</text>
+              <text class="flower-label" x="0" y="-115" text-anchor="middle" font-size="9" opacity="0.65" style="text-transform:none;letter-spacing:0;">ATS · ML models</text>
+            </g>
+            <!-- Petal 2: upper right -->
+            <g transform="rotate(72)">
+              <ellipse class="flower-petal" cx="0" cy="-140" rx="78" ry="120"
+                data-label="Material artifacts"
+                data-detail="Servers in data centers running the ATS and video platforms. The applicant's own laptop, webcam, and microphone. The home or dorm environment they are required to record in. The physical office of the company where the successful candidate eventually works — which the algorithm has decided who enters."/>
+              <g transform="rotate(-72)">
+                <text class="flower-label" x="133" y="-50" text-anchor="middle">Material</text>
+                <text class="flower-label" x="133" y="-33" text-anchor="middle">artifacts</text>
+                <text class="flower-label" x="133" y="-12" text-anchor="middle" font-size="9" opacity="0.65" style="text-transform:none;letter-spacing:0;">servers · webcams</text>
+              </g>
+            </g>
+            <!-- Petal 3: lower right -->
+            <g transform="rotate(144)">
+              <ellipse class="flower-petal" cx="0" cy="-140" rx="78" ry="120"
+                data-label="Social practices"
+                data-detail="Student resume-tailoring for the algorithm rather than the recruiter. Applying to fifty or one hundred jobs as a standard practice. Performing a particular affect on camera because a model is scoring it. Memorizing keywords. Practicing video interviews."/>
+              <g transform="rotate(-144)">
+                <text class="flower-label" x="82" y="125" text-anchor="middle">Social</text>
+                <text class="flower-label" x="82" y="142" text-anchor="middle">practices</text>
+                <text class="flower-label" x="82" y="163" text-anchor="middle" font-size="9" opacity="0.65" style="text-transform:none;letter-spacing:0;">writing for robots</text>
+              </g>
+            </g>
+            <!-- Petal 4: lower left -->
+            <g transform="rotate(216)">
+              <ellipse class="flower-petal" cx="0" cy="-140" rx="78" ry="120"
+                data-label="Social norms"
+                data-detail="Widespread acceptance in HR that high-volume roles require algorithmic screening. The normalization of ghosting — applicants no longer expect a rejection letter. The disappearance of the thank-you note as a professional expectation."/>
+              <g transform="rotate(-216)">
+                <text class="flower-label" x="-82" y="125" text-anchor="middle">Social</text>
+                <text class="flower-label" x="-82" y="142" text-anchor="middle">norms</text>
+                <text class="flower-label" x="-82" y="163" text-anchor="middle" font-size="9" opacity="0.65" style="text-transform:none;letter-spacing:0;">ghosting accepted</text>
+              </g>
+            </g>
+            <!-- Petal 5: upper left -->
+            <g transform="rotate(288)">
+              <ellipse class="flower-petal" cx="0" cy="-140" rx="78" ry="120"
+                data-label="Laws &amp; policies"
+                data-detail="Title VII of the Civil Rights Act. The ADA, which interacts awkwardly with one-way video interviews that penalize atypical affect or speech. NYC Local Law 144 (2021), requiring bias audits of automated employment decision tools. Illinois's AI Video Interview Act. The EU AI Act, which designates employment algorithms as high-risk."/>
+              <g transform="rotate(-288)">
+                <text class="flower-label" x="-133" y="-50" text-anchor="middle">Laws &amp;</text>
+                <text class="flower-label" x="-133" y="-33" text-anchor="middle">policies</text>
+                <text class="flower-label" x="-133" y="-12" text-anchor="middle" font-size="9" opacity="0.65" style="text-transform:none;letter-spacing:0;">Title VII · LL 144</text>
+              </g>
+            </g>
+
+            <!-- center -->
+            <circle class="flower-center" cx="0" cy="0" r="62"/>
+            <text class="flower-center-label" x="0" y="-3" text-anchor="middle">Stakeholders</text>
+            <text x="0" y="16" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="rgba(244,239,230,0.7)" letter-spacing="0.5">applicants · vendors</text>
+            <text x="0" y="28" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="rgba(244,239,230,0.7)" letter-spacing="0.5">employers · regulators</text>
+          </g>
+        </svg>
+
+        <div class="flower-detail" data-flower-detail aria-live="polite">
+          <span class="label">Hover a petal</span>
+          <p class="body" style="margin:0;">Each petal contributes to what the technology actually does. Hover or tap any petal to read its specifics.</p>
+        </div>
+
+        <figcaption>
+          <strong>Fig. 3.1</strong> — Sociotechnical flower applied to algorithmic
+          hiring. Five petals, one shared center. Hover or tap any petal for detail.
+        </figcaption>
+      </figure>
+
+      <h2><span class="num">§ 3.3</span>Examples of Infrastructure Breakdown</h2>
+
+      <p>
+        Infrastructure, according to Dr. Jake's definition, becomes visible
+        through problems, workarounds, and breakdowns
+        (Course slides, Week 6, slide 1). Algorithmic hiring provides several.
+      </p>
+
+      <h4>Northwestern Medicine, the silent return</h4>
+
+      <p>
+        The clearest breakdown in my experience is the Northwestern Medicine
+        one-way video interview. I completed the interview, hit submit, and
+        never heard back. No rejection, no advance, no acknowledgment. From my
+        side, the system looked like it was working: I recorded my video, it
+        uploaded, I got a confirmation screen. But the social infrastructure
+        that is supposed to surround a hiring decision — a recruiter, a
+        feedback loop, a human being on the other end — had been replaced by a
+        one-way data pipe.
+      </p>
+
+      <blockquote class="fade-in">
+        The breakdown is not that the technology failed; the breakdown is that
+        the technology worked exactly as designed while the social contract
+        around hiring quietly disappeared.
+      </blockquote>
+
+      <h4>The one-hour rejection</h4>
+
+      <p>
+        The one-hour rejection from a different employer is a second kind of
+        breakdown. The technical infrastructure did what it was built to do —
+        parsed my resume, scored it, and issued a rejection. What broke was the
+        social promise of consideration. A rejection that arrives within an
+        hour is a rejection that was never weighed by a person.
+      </p>
+
+      <h4>Amazon, at scale</h4>
+
+      <p>
+        On a larger scale, the Amazon scrapped hiring tool is a famous
+        infrastructure breakdown (Dastin). The technical system did what it was
+        trained to do. What broke was the assumption that the training data —
+        a decade of hiring decisions in a male-dominated field — was a neutral
+        description of "qualified." The historical social infrastructure of
+        bias got hard-coded into the technical infrastructure and scaled.
+      </p>
+
+      <span class="rule short"></span>
+    </article>
+
+    <nav class="pager" aria-label="Section navigation">
+      <a href="02-manual-or-automatic.html" class="prev">
+        <span class="dir">← Chapter 02</span>
+        <span class="title">Manual or Automatic</span>
+      </a>
+      <a href="04-power.html" class="next">
+        <span class="dir">Chapter 04 →</span>
+        <span class="title">How Power Works</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <span>Ethan Pairitz · INFO&middot;I 202 · Spring 2026</span>
+    <span><a href="index.html">↑ Back to title</a></span>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

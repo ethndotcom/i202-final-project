@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>07 · The Usefulness of a Sociotechnical Approach</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .solution {
+      margin: 2.5rem 0;
+      padding: 2rem;
+      border: 1px solid var(--ink);
+      background: rgba(255,255,255,0.4);
+      position: relative;
+    }
+    .solution .marker {
+      position: absolute;
+      top: -0.7rem;
+      left: 1.5rem;
+      background: var(--paper);
+      padding: 0 0.7rem;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .solution h3 {
+      font-family: var(--display);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.5rem;
+      letter-spacing: -0.01em;
+      text-transform: none;
+      color: var(--ink);
+      margin: 0 0 1rem;
+    }
+    .solution p { font-size: 1rem; }
+    .solution p:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body data-section="07">
+
+  <div class="progress" aria-hidden="true"><div class="bar"></div></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html"><span class="amp">§</span> Algorithmic Hiring</a>
+      <ul class="nav-list">
+        <li><a href="01-introduction.html"      data-section="01"><span class="num">01</span> Intro</a></li>
+        <li><a href="02-manual-or-automatic.html" data-section="02"><span class="num">02</span> Manual / Auto</a></li>
+        <li><a href="03-infrastructure.html"    data-section="03"><span class="num">03</span> Infrastructure</a></li>
+        <li><a href="04-power.html"             data-section="04"><span class="num">04</span> Power</a></li>
+        <li><a href="05-black-box.html"         data-section="05"><span class="num">05</span> Black Box</a></li>
+        <li><a href="06-outcomes.html"          data-section="06"><span class="num">06</span> Outcomes</a></li>
+        <li><a href="07-usefulness.html"        data-section="07"><span class="num">07</span> Reflection</a></li>
+        <li><a href="08-works-cited.html"       data-section="08"><span class="num">08</span> Sources</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <span class="watermark" aria-hidden="true">07</span>
+      <div>
+        <div class="eyebrow reveal d1">Chapter 07</div>
+        <h1 class="reveal d2">The Usefulness of a <em>Sociotechnical</em> Approach</h1>
+      </div>
+      <div class="meta-block reveal d3">
+                Mutual shaping · Two solutions
+      </div>
+    </header>
+
+    <article class="prose">
+      <h2><span class="num">§ 7.1</span>How Sociotechnical Thinking Helped</h2>
+
+      <p class="dropcap">
+        Looking at algorithmic hiring through the mutual shaping lens Dr. Jake
+        introduced in weeks 3 and 4 — using the Elaine Herzberg case to
+        illustrate why technological determinism fails — changes what this
+        project is actually about (Course slides, Weeks 3–4). Without the lens,
+        this is a story about "AI hiring bias" — a technical problem with
+        technical fixes.
+      </p>
+
+      <p>
+        With the lens, the problem becomes the entire sociotechnical system:
+        the applicant behaviors the ATS has shaped, the recruiter incentives
+        that make algorithmic filtering attractive, the vendor business models
+        that profit from efficiency rather than candidate outcomes, the legal
+        and regulatory vacuum that allows proprietary black boxes to make
+        employment decisions, and the historical hiring patterns baked into the
+        training data.
+      </p>
+
+      <p>
+        Mutual shaping specifically helped me see that applicants are not
+        passive victims of the algorithm; we adapt to it. We write resumes for
+        robots. We memorize keywords. We practice video interviews to perform
+        the affect the camera wants. The technology shapes us, and our
+        adaptations in turn shape how the technology evolves.
+      </p>
+
+      <blockquote class="fade-in">
+        That is a very different story than "the AI is biased," and it points
+        to very different solutions.
+      </blockquote>
+
+      <h2><span class="num">§ 7.2</span>Proposed Solutions</h2>
+
+      <div class="solution fade-in">
+        <span class="marker">Solution 01</span>
+        <h3>Mandatory transparency &amp; the right to explanation</h3>
+        <p>
+          Every applicant rejected by an automated employment decision tool
+          should receive, at minimum: <strong>(a)</strong> notification that
+          an automated tool was used, <strong>(b)</strong> the top factors that
+          contributed to the decision, and <strong>(c)</strong> a pathway to
+          request human review. NYC Local Law 144 and the EU AI Act gesture in
+          this direction but stop short of a full right to explanation. A
+          federal standard would begin to rebalance the power asymmetry by
+          opening the black box — at least partially — to the people it is
+          being used on.
+        </p>
+        <p>
+          This is a sociotechnical solution rather than a purely technical one
+          because it changes both the technology (new logging and reporting
+          requirements) and the social infrastructure (new legal rights, new HR
+          practices, new candidate expectations). It doesn't "fix" the
+          algorithm; it changes who has agency inside the system, redistributing
+          some of the power that currently sits exclusively with employers and
+          vendors.
+        </p>
+      </div>
+
+      <div class="solution fade-in">
+        <span class="marker">Solution 02</span>
+        <h3>A human-in-the-loop floor for rejection decisions</h3>
+        <p>
+          Algorithms should be allowed to rank and triage, but a human should
+          make the final rejection decision for any candidate who meets a
+          minimum qualification threshold. Full algorithmic rejection with no
+          human review should be prohibited for employment decisions that
+          involve protected classes.
+        </p>
+        <p>
+          This is directly analogous to the 2024 ACLU settlement in the Robert
+          Williams case from the week 9 Project Green Light material, in which
+          the Detroit Police Department was prohibited from arresting people
+          based solely on facial recognition results
+          (Course slides, Week 9). Both cases recognize that some decisions
+          are too consequential to leave to an algorithm alone.
+        </p>
+        <p>
+          This solution acknowledges the efficiency case (algorithms can sort
+          50,000 resumes; humans cannot) while refusing the harm case
+          (algorithms should not silently reject candidates before any human
+          ever sees them). It also re-introduces the social layer that was
+          missing from my fifty-plus algorithmic rejections: the sense that
+          someone on the other end actually considered me. It is the same layer
+          that was present at CFS, and the reason that process produced a
+          different outcome.
+        </p>
+      </div>
+
+      <span class="rule short"></span>
+
+      <p class="lead" style="margin-top:2rem;">
+        Fifty-plus algorithmic pipelines produced zero interviews. One human
+        pipeline produced an internship. The difference is the entire system.
+      </p>
+    </article>
+
+    <nav class="pager" aria-label="Section navigation">
+      <a href="06-outcomes.html" class="prev">
+        <span class="dir">← Chapter 06</span>
+        <span class="title">Outcomes</span>
+      </a>
+      <a href="08-works-cited.html" class="next">
+        <span class="dir">Chapter 08 →</span>
+        <span class="title">Works Cited</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <span>Ethan Pairitz · INFO&middot;I 202 · Spring 2026</span>
+    <span><a href="index.html">↑ Back to title</a></span>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>06 · Desired &amp; Undesired Outcomes</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-section="06">
+
+  <div class="progress" aria-hidden="true"><div class="bar"></div></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html"><span class="amp">§</span> Algorithmic Hiring</a>
+      <ul class="nav-list">
+        <li><a href="01-introduction.html"      data-section="01"><span class="num">01</span> Intro</a></li>
+        <li><a href="02-manual-or-automatic.html" data-section="02"><span class="num">02</span> Manual / Auto</a></li>
+        <li><a href="03-infrastructure.html"    data-section="03"><span class="num">03</span> Infrastructure</a></li>
+        <li><a href="04-power.html"             data-section="04"><span class="num">04</span> Power</a></li>
+        <li><a href="05-black-box.html"         data-section="05"><span class="num">05</span> Black Box</a></li>
+        <li><a href="06-outcomes.html"          data-section="06"><span class="num">06</span> Outcomes</a></li>
+        <li><a href="07-usefulness.html"        data-section="07"><span class="num">07</span> Reflection</a></li>
+        <li><a href="08-works-cited.html"       data-section="08"><span class="num">08</span> Sources</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <span class="watermark" aria-hidden="true">06</span>
+      <div>
+        <div class="eyebrow reveal d1">Chapter 06</div>
+        <h1 class="reveal d2">Desired &amp; <em>Undesired</em> Outcomes</h1>
+      </div>
+      <div class="meta-block reveal d3">
+                Classification · Social analytics · Harm
+      </div>
+    </header>
+
+    <article class="prose">
+      <h2><span class="num">§ 6.1</span>What the Designers Wanted</h2>
+
+      <p class="dropcap">
+        The people who built and bought these systems had real problems to
+        solve. The desired outcomes are reduce time-to-fill, reduce cost per
+        hire, manage overwhelming application volume (a single posting at a
+        major employer can receive tens of thousands of applications), provide
+        consistent and "standardized" evaluation, and — marketed but rarely
+        delivered — reduce bias in hiring by removing subjective human judgment.
+      </p>
+
+      <p>
+        The efficiency case is real. No human team can read 50,000 resumes.
+        Some form of filtering is inevitable at scale.
+      </p>
+
+      <blockquote class="fade-in">
+        The question is not whether filtering happens but who designs it,
+        who controls it, and who gets to see it.
+      </blockquote>
+
+      <h2><span class="num">§ 6.2</span>Classification, Categories, Social Analytics</h2>
+
+      <p>
+        In the week 8 lectures on social analytics and classificatory systems,
+        Dr. Jake defined an analytic as <em>"a lens through which we can make
+        sense of observations"</em> (Course slides, Week 8, slide 30), and
+        classification systems as <em>"sets of boxes (metaphorical or literal)
+        into which things can be put into then do some kind of work —
+        bureaucratic or knowledge production"</em> (citing Bowker and Star;
+        Course slides, Week 8, slide 35). A category, in his framing, is
+        <em>"a group of people or things with particular features in common"</em>
+        (Course slides, Week 8, slide 36). He emphasized that our learned
+        classification systems build our mental models, which in turn shape
+        the computational models used to train predictive algorithms
+        (Course slides, Week 8).
+      </p>
+
+      <p>
+        That sequence — <strong>mental model → computational model → predictive
+        algorithm</strong> — is the story of algorithmic hiring in one sentence.
+      </p>
+
+      <p>
+        Algorithmic hiring is a classification system in exactly this sense.
+        It sorts applicants into "qualified" and "not qualified," categories
+        that are mutually exclusive (per Dr. Jake's criteria) and that carry
+        enormous embedded assumptions. Dr. Jake's week 8 social analytics —
+        race, gender, class, and disability — are directly applicable.
+      </p>
+
+      <h3>Gender</h3>
+      <p>
+        The Amazon case is the clearest demonstration (Dastin). Trained on a
+        decade of male-dominated tech hiring, the model learned that women were
+        worse candidates and began penalizing the word <em>"women's"</em> on
+        resumes. The classification "qualified software engineer" had been
+        shaped historically by gender, and the algorithm absorbed that pattern.
+        Even after Amazon scrapped the specific tool, resume parsers still
+        interact with gender through name inference and women-coded
+        extracurriculars — what Dr. Jake's week 8 lecture on the technologies
+        of names describes as names doing <em>"invisible work"</em> that
+        communicates gender (Course slides, Week 8, slide 23).
+      </p>
+
+      <h3>Race</h3>
+      <p>
+        Studies have found that resume-screening algorithms can pick up on race
+        through name proxies, zip codes, and school names — including
+        historically Black colleges and universities versus predominantly white
+        institutions (Wilson and Caliskan). The system does not need to know
+        your race explicitly to discriminate on the basis of it. Again, this is
+        the technologies-of-names dynamic: names are not neutral data, they
+        carry social signals that the algorithm is happy to read.
+      </p>
+
+      <h3>Class</h3>
+      <p>
+        ATS systems routinely filter on school prestige, through explicit GPA
+        or school-name filters or through ML models trained on hires from a
+        small set of target schools. Per Dr. Jake's definition, class is
+        <em>"a classification system that groups people with similar life
+        chances, shared historical narratives, living circumstances, and/or
+        who occupy a similar position in the economic system"</em>
+        (Course slides, Week 8, slide 48).
+      </p>
+
+      <div class="callout fade-in">
+        A filter on school prestige is a class filter dressed up as a merit filter.
+      </div>
+
+      <h3>Disability</h3>
+      <p>
+        Dr. Jake defined disability as <em>"a classification system that groups
+        people with similar body conditions,"</em> distinguishing a medical
+        model from other approaches (Course slides, Week 8, slide 49). One-way
+        video interviews penalize candidates with speech differences, facial
+        differences, neurodivergence, or non-standard affect. A candidate on
+        the autism spectrum who doesn't make typical eye contact, or a
+        candidate with a stutter, is
+        disadvantaged by a model trained on neurotypical "success" candidates.
+      </p>
+
+      <h2><span class="num">§ 6.3</span>Culture, Technoculture, &amp; Signs</h2>
+
+      <p>
+        Dr. Jake opened week 5 with Anne Balsamo's definition of culture as
+        <em>"a socially shared symbolic system of signs and meanings"</em>
+        (Balsamo, p. 5; Course slides, Week 5, slide 5), and introduced
+        technoculture as the idea that <em>"technology and culture shouldn't
+        be thought about as in opposition to each other, but rather they are
+        interlinked"</em> (Course slides, Week 5, slide 17).
+      </p>
+
+      <p>
+        This is a useful frame for the resume. A resume is not a neutral
+        document — it is a carefully arranged set of cultural signs, and the
+        ATS is a machine that reads signs it was trained on. If your signs
+        don't match the training set (wrong school, wrong extracurricular
+        vocabulary, wrong format), you read to the machine as illegible. The
+        applicant and the ATS are both inside a technoculture: neither exists
+        independently of the other, and each reshapes the other over time.
+      </p>
+
+      <h2><span class="num">§ 6.4</span>Harms to Stakeholders</h2>
+
+      <ul>
+        <li>Candidates are rejected silently, with no feedback, no recourse, and no way to improve, because they don't know what they did "wrong."</li>
+        <li>Protected classes experience automated discrimination at scale, with the scale itself making individual cases hard to detect.</li>
+        <li>Qualified candidates are filtered out for cosmetic reasons (resume formatting, missing keyword), and companies never know they missed them.</li>
+        <li>Candidates internalize rejection as personal failure when the rejection may be algorithmic noise.</li>
+        <li>Trust in the hiring process erodes, producing application fatigue and disengagement from the labor market.</li>
+      </ul>
+
+      <blockquote class="fade-in">
+        I spent months assuming something was wrong with me. The moment I hit
+        a human-run pipeline (CFS), I got an interview and now an internship.
+        The problem was not me.
+      </blockquote>
+
+      <h2><span class="num">§ 6.5</span>Resisting Determinism &amp; Reductionism</h2>
+
+      <p>
+        Dr. Jake defined <strong>technological determinism</strong> in the
+        opening weeks of the course as the belief that <em>"technological
+        development follows a natural logic, which is beyond cultural or
+        political influence"</em> and that <em>"these developments impact
+        societies and force them to adapt"</em>
+        (Course slides, Week 3, slide 16). He separately defined
+        <strong>reductionist thinking</strong> as
+        <em>"oversimplification of human beings and social phenomena to easily
+        quantified data points that makes computational modeling possible"</em>
+        (Course slides, Week 2, slide 28).
+      </p>
+
+      <p>
+        Algorithmic hiring is often described reductively — <em>"the
+        algorithm is biased, fix the algorithm"</em> — or deterministically —
+        <em>"AI is just the future of hiring, applicants need to adapt."</em>
+        Both framings are wrong.
+      </p>
+
+      <p>
+        The algorithm is one node in a much larger system that includes
+        applicant behavior, recruiter incentives, vendor business models, legal
+        voids, and historical hiring patterns baked into training data. And
+        applicants are not simply being forced to adapt to an inevitable
+        technology — their adaptations, in turn, are shaping how the technology
+        evolves. That is mutual shaping, and it is the lens Dr. Jake told us
+        social informatics requires (Course slides, Week 3).
+      </p>
+
+      <span class="rule short"></span>
+    </article>
+
+    <nav class="pager" aria-label="Section navigation">
+      <a href="05-black-box.html" class="prev">
+        <span class="dir">← Chapter 05</span>
+        <span class="title">The Black Box</span>
+      </a>
+      <a href="07-usefulness.html" class="next">
+        <span class="dir">Chapter 07 →</span>
+        <span class="title">Reflection &amp; Solutions</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <span>Ethan Pairitz · INFO&middot;I 202 · Spring 2026</span>
+    <span><a href="index.html">↑ Back to title</a></span>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>05 · Parts of the System That Have Been Black Boxed</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .blackbox {
+      margin: 3rem -1rem;
+      padding: 2rem 1.5rem;
+      background: var(--ink);
+      color: var(--paper);
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 1.5rem;
+      align-items: stretch;
+      border-radius: 2px;
+      position: relative;
+    }
+    .blackbox .col h5 {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.9rem;
+      font-weight: 500;
+    }
+    .blackbox .col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      line-height: 1.7;
+      color: rgba(244,239,230,0.85);
+    }
+    .blackbox .col ul li {
+      padding: 0.25rem 0;
+      border-bottom: 1px dotted rgba(244,239,230,0.18);
+    }
+    .blackbox .col ul li:last-child { border-bottom: none; }
+    .blackbox .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0.5rem;
+    }
+    .blackbox .box {
+      width: 110px;
+      height: 110px;
+      border: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--display);
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--paper);
+      position: relative;
+      background: rgba(255,255,255,0.02);
+    }
+    .blackbox .box::before, .blackbox .box::after {
+      content: '?';
+      position: absolute;
+      font-family: var(--display);
+      color: rgba(184,65,43,0.25);
+      font-size: 4rem;
+    }
+    .blackbox .box::before { top: 4px; left: 8px; }
+    .blackbox .box::after { bottom: -8px; right: 8px; }
+    .blackbox .arrow {
+      font-family: var(--mono);
+      color: var(--accent);
+      font-size: 1.1rem;
+      margin: 0.4rem 0;
+    }
+    @media (max-width: 720px) {
+      .blackbox { grid-template-columns: 1fr; gap: 1.2rem; }
+      .blackbox .center { padding: 0.5rem; }
+    }
+  </style>
+</head>
+<body data-section="05">
+
+  <div class="progress" aria-hidden="true"><div class="bar"></div></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html"><span class="amp">§</span> Algorithmic Hiring</a>
+      <ul class="nav-list">
+        <li><a href="01-introduction.html"      data-section="01"><span class="num">01</span> Intro</a></li>
+        <li><a href="02-manual-or-automatic.html" data-section="02"><span class="num">02</span> Manual / Auto</a></li>
+        <li><a href="03-infrastructure.html"    data-section="03"><span class="num">03</span> Infrastructure</a></li>
+        <li><a href="04-power.html"             data-section="04"><span class="num">04</span> Power</a></li>
+        <li><a href="05-black-box.html"         data-section="05"><span class="num">05</span> Black Box</a></li>
+        <li><a href="06-outcomes.html"          data-section="06"><span class="num">06</span> Outcomes</a></li>
+        <li><a href="07-usefulness.html"        data-section="07"><span class="num">07</span> Reflection</a></li>
+        <li><a href="08-works-cited.html"       data-section="08"><span class="num">08</span> Sources</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <span class="watermark" aria-hidden="true">05</span>
+      <div>
+        <div class="eyebrow reveal d1">Chapter 05</div>
+        <h1 class="reveal d2">Parts of the System<br/>That Have Been <em>Black Boxed</em></h1>
+      </div>
+      <div class="meta-block reveal d3">
+                Inputs · Outputs · Access
+      </div>
+    </header>
+
+    <article class="prose">
+      <p class="dropcap">
+        Dr. Jake defined a black box in the week 8 lectures as
+        <em>"a process where the individual steps of the process are invisible
+        to various actors within a sociotechnical system. Data are inputted and
+        then undergo some sort of analysis or process and come out altered.
+        The analysis or process is unclear to users and to subjects of the
+        process"</em> (Course slides, Week 8, slide 9). Algorithmic hiring is
+        saturated with black boxes.
+      </p>
+
+      <h2><span class="num">§ 5.1</span>What Processes Are Obscured</h2>
+
+      <dl class="deflist fade-in">
+        <div class="item"><dt>Resume scoring</dt><dd>The ATS assigns each resume a fit score against the job description. Applicants never see this score, never see which keywords mattered, and cannot request the number.</dd></div>
+        <div class="item"><dt>Knockout questions</dt><dd>Some applications silently reject candidates for answers to questions like "Are you willing to relocate?" or "What is your expected salary?" Candidates are not told those questions were knockout criteria.</dd></div>
+        <div class="item"><dt>Video analysis</dt><dd>When I recorded my Northwestern Medicine video interview, I had no idea what was being scored. Word choice? Facial expressions? Pauses? Eye contact? Length of response? The vendor does not disclose this, and the employer often does not know the details.</dd></div>
+        <div class="item"><dt>Ranking &amp; sorting</dt><dd>Even candidates who pass the initial filter are ranked against each other. The ranking algorithm is proprietary.</dd></div>
+        <div class="item"><dt>The decision itself</dt><dd>Often there is no explicit rejection. You simply never hear back. The one-hour rejection is a rare case where the black box produced a fast, unambiguous signal. Most of the time, the black box's output is silence.</dd></div>
+      </dl>
+
+      <h2><span class="num">§ 5.2</span>What Goes In, What Comes Out</h2>
+
+      <div class="blackbox fade-in">
+        <div class="col">
+          <h5>Inputs</h5>
+          <ul>
+            <li>resume.pdf (parsed)</li>
+            <li>cover letter</li>
+            <li>knockout answers</li>
+            <li>video recording</li>
+            <li>demographic data</li>
+            <li>application metadata</li>
+          </ul>
+        </div>
+        <div class="center">
+          <div class="arrow">▶</div>
+          <div class="box">black box</div>
+          <div class="arrow">▶</div>
+        </div>
+        <div class="col">
+          <h5>Outputs</h5>
+          <ul>
+            <li>advance / reject</li>
+            <li>silence (most often)</li>
+            <li>fit score → recruiter</li>
+            <li>shortlist → hiring manager</li>
+            <li>(nothing → applicant)</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2><span class="num">§ 5.3</span>Who Can See Inside</h2>
+
+      <h3>Have access</h3>
+      <ul>
+        <li>Vendor engineers (HireVue, Workday, etc.) who built the models.</li>
+        <li>Employer administrators who configure the filters, though they rarely understand the underlying machine learning.</li>
+        <li>Auditors working under laws like NYC Local Law 144, which requires bias audits of automated employment decision tools.</li>
+      </ul>
+
+      <h3>Do not have access</h3>
+      <ul>
+        <li>Applicants. We are the subject of the decision and have no view into it.</li>
+        <li>Most recruiters and hiring managers, who see the output shortlist but not the scoring logic.</li>
+        <li>Regulators in most U.S. jurisdictions. Federal law has not caught up with AI-driven hiring.</li>
+        <li>University career services. They coach students based on best guesses about how the ATS works, not insider knowledge.</li>
+      </ul>
+
+      <blockquote class="fade-in">
+        The asymmetry is the point. The people most affected by the decision
+        have the least ability to see how it was made.
+      </blockquote>
+
+      <p>
+        This parallels the analysis of Project Green Light from the week 9 case
+        study, in which the residents of Detroit most affected by facial
+        recognition surveillance were the stakeholders with the least ability to
+        inspect the system (Course slides, Week 9, slides 42–43).
+      </p>
+
+      <span class="rule short"></span>
+    </article>
+
+    <nav class="pager" aria-label="Section navigation">
+      <a href="04-power.html" class="prev">
+        <span class="dir">← Chapter 04</span>
+        <span class="title">How Power Works</span>
+      </a>
+      <a href="06-outcomes.html" class="next">
+        <span class="dir">Chapter 06 →</span>
+        <span class="title">Desired &amp; Undesired Outcomes</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <span>Ethan Pairitz · INFO&middot;I 202 · Spring 2026</span>
+    <span><a href="index.html">↑ Back to title</a></span>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

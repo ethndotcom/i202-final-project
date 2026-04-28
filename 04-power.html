@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>04 · How Power Works in the System</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .role-card {
+      margin: 1.4rem 0;
+      padding: 1.4rem 1.6rem;
+      background: var(--paper-deep);
+      border-left: 3px solid var(--accent);
+    }
+    .role-card.outlined {
+      background: transparent;
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--ink);
+    }
+    .role-card .role {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+    }
+    .role-card.outlined .role { color: var(--ink); }
+    .role-card p { font-size: 1rem; margin-bottom: 0; }
+  </style>
+</head>
+<body data-section="04">
+
+  <div class="progress" aria-hidden="true"><div class="bar"></div></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html"><span class="amp">§</span> Algorithmic Hiring</a>
+      <ul class="nav-list">
+        <li><a href="01-introduction.html"      data-section="01"><span class="num">01</span> Intro</a></li>
+        <li><a href="02-manual-or-automatic.html" data-section="02"><span class="num">02</span> Manual / Auto</a></li>
+        <li><a href="03-infrastructure.html"    data-section="03"><span class="num">03</span> Infrastructure</a></li>
+        <li><a href="04-power.html"             data-section="04"><span class="num">04</span> Power</a></li>
+        <li><a href="05-black-box.html"         data-section="05"><span class="num">05</span> Black Box</a></li>
+        <li><a href="06-outcomes.html"          data-section="06"><span class="num">06</span> Outcomes</a></li>
+        <li><a href="07-usefulness.html"        data-section="07"><span class="num">07</span> Reflection</a></li>
+        <li><a href="08-works-cited.html"       data-section="08"><span class="num">08</span> Sources</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <span class="watermark" aria-hidden="true">04</span>
+      <div>
+        <div class="eyebrow reveal d1">Chapter 04</div>
+        <h1 class="reveal d2">How <em>Power</em> Works in the System</h1>
+      </div>
+      <div class="meta-block reveal d3">
+                Same system, six experiences
+      </div>
+    </header>
+
+    <article class="prose">
+      <p class="lead">
+        The same algorithmic pipeline produces six entirely different
+        experiences depending on where you stand inside it.
+      </p>
+
+      <p>
+        Dr. Jake emphasized across weeks 6 and 7 that power and agency are
+        closely related but distinct, and that the same system produces very
+        different experiences for people holding different amounts of each
+        (Course slides, Week 6, slide 23; Week 7, slide 10). Algorithmic
+        hiring makes this easy to observe. What follows is the same system,
+        viewed from six positions.
+      </p>
+
+      <span class="rule short"></span>
+
+      <div class="fade-in role-card">
+        <div class="role">Vendor engineer at HireVue or Workday</div>
+        <p>
+          You have near-total power over the rules. You decide what counts as a
+          "good" candidate at the model level. You don't see the human cost of
+          false rejections because you measure success in hiring-manager
+          satisfaction, not rejected-applicant experience.
+        </p>
+      </div>
+
+      <div class="fade-in role-card">
+        <div class="role">Hiring manager at a Fortune 500 company</div>
+        <p>
+          You have real power but limited agency over the algorithm. You
+          benefit from not having to read 5,000 resumes. You trust the
+          shortlist. You rarely ask how candidates got filtered out, and you
+          have no tool to audit the filter.
+        </p>
+      </div>
+
+      <div class="fade-in role-card">
+        <div class="role">Recruiter</div>
+        <p>
+          You have some agency to override the algorithm but are pressured by
+          volume to trust it. You're measured on time-to-fill and cost-per-hire.
+          You are <em>not</em> measured on how many good candidates got filtered
+          out before you ever saw them.
+        </p>
+      </div>
+
+      <div class="fade-in role-card outlined">
+        <div class="role">Well-resourced applicant</div>
+        <p>
+          The ATS still processes you, but you have shortcuts. You can get an
+          employee referral and skip the ATS entirely. You can afford career
+          coaches. You have alumni networks, professors who know hiring
+          managers, and family connections that provide side doors.
+          The ATS is disciplinary architecture for people who have to walk
+          through the front door.
+        </p>
+      </div>
+
+      <div class="fade-in role-card outlined">
+        <div class="role">Under-resourced applicant</div>
+        <p>
+          The ATS <em>is</em> the front door, and it is locked. You have no
+          referral, no career coach, no alumni mentor. You apply to 100 jobs,
+          get 100 automated rejections, and have no way to know whether your
+          resume is the problem, the algorithm is the problem, or you were
+          filtered out at random.
+        </p>
+      </div>
+
+      <div class="fade-in role-card outlined">
+        <div class="role">My own experience</div>
+        <p>
+          I sit somewhere in the middle. I attend a well-regarded university
+          (IU's Luddy School), I have real work experience (Global Link IT),
+          I hold multiple virtual consulting certifications (BCG, PwC,
+          Accenture, Deloitte, Datacom), and I have a professional portfolio.
+          None of that mattered to the ATS at the companies I applied to.
+        </p>
+      </div>
+
+      <div class="stat-row fade-in">
+        <div class="stat">
+          <div class="num"><span data-count="50">0</span><span style="font-size:0.55em;vertical-align:super;">+</span></div>
+          <div class="label">Algorithmic pipelines</div>
+        </div>
+        <div class="stat">
+          <div class="num"><span data-count="0">0</span></div>
+          <div class="label">Interviews granted</div>
+        </div>
+        <div class="stat">
+          <div class="num accent"><span data-count="1">0</span></div>
+          <div class="label">Human pipeline → internship</div>
+        </div>
+      </div>
+
+      <blockquote class="fade-in">
+        The correlation is too tight to be coincidence, and the difference
+        between those two outcomes is the difference between being
+        <em>categorized</em> and being <em>considered</em>.
+      </blockquote>
+
+      <span class="rule short"></span>
+    </article>
+
+    <nav class="pager" aria-label="Section navigation">
+      <a href="03-infrastructure.html" class="prev">
+        <span class="dir">← Chapter 03</span>
+        <span class="title">Infrastructure</span>
+      </a>
+      <a href="05-black-box.html" class="next">
+        <span class="dir">Chapter 05 →</span>
+        <span class="title">The Black Box</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <span>Ethan Pairitz · INFO&middot;I 202 · Spring 2026</span>
+    <span><a href="index.html">↑ Back to title</a></span>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

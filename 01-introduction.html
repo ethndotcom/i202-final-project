@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>01 · Introduction to the Sociotechnical System</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-section="01">
+
+  <div class="progress" aria-hidden="true"><div class="bar"></div></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html"><span class="amp">§</span> Algorithmic Hiring</a>
+      <ul class="nav-list">
+        <li><a href="01-introduction.html"      data-section="01"><span class="num">01</span> Intro</a></li>
+        <li><a href="02-manual-or-automatic.html" data-section="02"><span class="num">02</span> Manual / Auto</a></li>
+        <li><a href="03-infrastructure.html"    data-section="03"><span class="num">03</span> Infrastructure</a></li>
+        <li><a href="04-power.html"             data-section="04"><span class="num">04</span> Power</a></li>
+        <li><a href="05-black-box.html"         data-section="05"><span class="num">05</span> Black Box</a></li>
+        <li><a href="06-outcomes.html"          data-section="06"><span class="num">06</span> Outcomes</a></li>
+        <li><a href="07-usefulness.html"        data-section="07"><span class="num">07</span> Reflection</a></li>
+        <li><a href="08-works-cited.html"       data-section="08"><span class="num">08</span> Sources</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <span class="watermark" aria-hidden="true">01</span>
+      <div>
+        <div class="eyebrow reveal d1">Chapter 01</div>
+        <h1 class="reveal d2">Introduction to the <em>Sociotechnical</em> System</h1>
+      </div>
+      <div class="meta-block reveal d3">
+                Themed module · Stakeholders · Power · History
+      </div>
+    </header>
+
+    <article class="prose">
+      <h2><span class="num">§ 1.1</span>Themed Module &amp; Rationale</h2>
+
+      <p class="dropcap">
+        For this final project, I am analyzing the sociotechnical system of
+        algorithmic hiring, with a specific focus on the use of Applicant
+        Tracking Systems (ATS), automated resume screening, and one-way video
+        interviews in the internship application pipeline for college students.
+        I chose this module for two reasons. First, in the week 7 slides
+        introducing algorithmic decision-making, Dr. Jake listed
+        <em>"AI systems used to determine who to interview and hire"</em> as one
+        of the three algorithmic sociotechnical contexts the course would
+        examine, alongside the Los Angeles homeless-housing system and Detroit's
+        Project Green Light (Course slides, Week 7, slide 43).
+      </p>
+
+      <p>
+        Second, algorithmic hiring is the sociotechnical system I have personally
+        collided with the most over the past year. As a sophomore Informatics
+        major at Indiana University applying to technology consulting and IT
+        consulting internship roles across automotive, healthcare, banking, data,
+        and other industries, I submitted more than fifty applications. Nearly
+        every single one was processed first by an ATS, and some required a
+        one-way video interview (the one used by Northwestern Medicine is the one
+        I remember most clearly). I was rejected or ghosted by every company
+        whose pipeline involved algorithmic screening.
+      </p>
+
+      <div class="callout fade-in">
+        <strong>One company rejected me within an hour of submitting my application</strong>
+        — a response time no human recruiter could achieve. The only company whose
+        process was entirely run by humans was the only one that ever gave me a
+        first-round interview, and I am now completing an internship with them
+        (Creative Financial Staffing). That contrast is the empirical foundation
+        for this entire analysis.
+      </div>
+
+      <p>
+        This project uses sociotechnical thinking, which Dr. Jake defined in the
+        opening week of the course as <em>"a set of analytical tools and
+        perspectives in problem solving to carefully consider the relationship
+        between people and technologies in order to create more nuanced, well
+        rounded and well-developed solutions to real world problems"</em>
+        (Course slides, Week 2, slide 5). The goal is to treat algorithmic
+        hiring not as a purely technical system but as a sociotechnical one,
+        a term Dr. Jake defined as <em>"an adjective that describes something
+        as simultaneously social and technical"</em>
+        (Course slides, Week 2, slide 4).
+      </p>
+
+      <p>
+        Algorithmic hiring surfaces nearly every concept from the I202
+        sociotechnical toolkit: stakeholders and social actors, agency, power,
+        the sociotechnical flower (digital artifacts, material artifacts, social
+        norms, social practices, laws and policies), culture and technoculture,
+        infrastructure, disciplinary and persuasive architecture, models,
+        algorithms, the black box, classification systems and categories, social
+        analytics (race, gender, class, disability), mutual shaping, and a
+        rejection of both technological determinism and reductionist thinking.
+      </p>
+
+      <h2><span class="num">§ 1.2</span>Stakeholders &amp; Social Actors</h2>
+
+      <p>
+        Dr. Jake defined a stakeholder as <em>"a person or a group of people who
+        have something to lose or to gain in a particular situation; or who have
+        an interest or concern regarding a particular situation,"</em> and he
+        specified that not-alive objects are not stakeholders
+        (Course slides, Week 2, slide 14). He defined social actors separately
+        as <em>"those who do things, cause things, or have agency,"</em> noting
+        that social actors are usually (but not always) human
+        (Course slides, Week 3, slide 11). Agency itself he defined as
+        <em>"the capacity to take actions and make choices"</em>
+        (Course slides, Week 3, slide 13).
+      </p>
+
+      <p>
+        The algorithmic hiring system has many stakeholders, of which a smaller
+        set function as empowered social actors:
+      </p>
+
+      <dl class="deflist fade-in">
+        <div class="item"><dt>Applicants</dt><dd>Students, early-career workers, and experienced professionals submitting resumes and completing video interviews. Stakeholders with very limited agency.</dd></div>
+        <div class="item"><dt>Hiring Companies</dt><dd>The automotive, healthcare, banking, and data companies I applied to. They purchase the ATS software, configure the filters, and own the final hire/no-hire decision. Stakeholders <em>and</em> powerful social actors.</dd></div>
+        <div class="item"><dt>ATS &amp; AI Vendors</dt><dd>Private companies like Workday, Greenhouse, iCIMS, and HireVue. They build and sell the resume-parsing algorithms, keyword filters, and video interview analysis tools. Both stakeholders and powerful social actors, because they define what the system is capable of at the model level.</dd></div>
+        <div class="item"><dt>Recruiters / HR</dt><dd>Humans who in theory review candidates after algorithmic filtering. In high-volume pipelines, most never see an applicant the algorithm has not pre-approved.</dd></div>
+        <div class="item"><dt>Hiring Managers</dt><dd>Team leads making final decisions from the shortlist the algorithm produces.</dd></div>
+        <div class="item"><dt>Regulators</dt><dd>The EEOC, New York City's Local Law 144, Illinois's AI Video Interview Act, and federal agencies trying to govern algorithmic bias in employment.</dd></div>
+        <div class="item"><dt>Career Services</dt><dd>University advisors coaching students on how to get past ATS filters, shaping student resume-writing practices in response to the technology.</dd></div>
+        <div class="item"><dt>CFS</dt><dd>Creative Financial Staffing — the staffing firm I now intern with. CFS represents a contrasting model within the same system: a hiring pipeline that foregrounded human judgment over algorithmic filtering.</dd></div>
+      </dl>
+
+      <h3>What stakeholders are trying to accomplish</h3>
+      <ul>
+        <li>Applicants want a fair shot at a job, a clear signal about fit, and ideally feedback when rejected.</li>
+        <li>Hiring companies want to fill roles quickly and cheaply. They are measured on time-to-fill and cost-per-hire.</li>
+        <li>Vendors want to sell software and grow market share. Their success metric is efficiency gains for the employer, not candidate outcomes.</li>
+        <li>Recruiters want to hit hiring quotas without being overwhelmed by application volume.</li>
+        <li>Regulators want to ensure hiring practices do not discriminate against protected classes under Title VII and the ADA.</li>
+        <li>University career services want their students to get jobs, so they teach ATS-optimization as a practical skill.</li>
+      </ul>
+
+      <h2><span class="num">§ 1.3</span>Power &amp; Agency</h2>
+
+      <p>
+        Dr. Jake defined power as <em>"the ability to influence,"</em> noting
+        that <em>"influence leads to consequence, which social informatics is
+        interested in understanding from a nuanced point of view"</em>
+        (Course slides, Week 6, slide 23). Power and agency are closely related,
+        and, importantly, technologies themselves can have power even though
+        social informatics generally ascribes agency specifically to human
+        beings (Course slides, Week 6, slide 23).
+      </p>
+
+      <blockquote class="fade-in">
+        In algorithmic hiring, power is radically asymmetric.
+        <cite>— A working thesis</cite>
+      </blockquote>
+
+      <p>
+        Hiring companies and vendors hold the overwhelming majority of both
+        power and agency. Vendors have the power to define what "qualified"
+        even means computationally — which keywords matter, which facial
+        expressions score higher, which linguistic patterns correlate with
+        "success." Employers have the power to set criteria, the agency to
+        change the process at any time, and the power to reject without
+        explanation. The technology itself exerts power: a resume parser that
+        cannot read your PDF has consequences for you regardless of any human's
+        intent.
+      </p>
+
+      <p>
+        Applicants, by contrast, have almost no power and only a narrow sliver
+        of agency. I can choose whether to apply, and I can try to tune my
+        resume for ATS keywords, but I have no power over the criteria, no
+        visibility into the scoring, and no ability to appeal a rejection.
+      </p>
+
+      <h2><span class="num">§ 1.4</span>History of the System</h2>
+
+      <h3>General history</h3>
+      <p>
+        Applicant Tracking Systems began in the 1990s as digital filing cabinets
+        for HR departments. As online job boards made it trivially easy to apply
+        to dozens of jobs at once, application volumes exploded and HR teams
+        could no longer read every resume. The ATS evolved from passive storage
+        into active filter, first using Boolean keyword matching and later using
+        machine learning to rank and reject candidates automatically.
+      </p>
+
+      <p>
+        One-way (asynchronous) video interview platforms emerged in the early
+        2010s. HireVue, one of the largest vendors, marketed AI that could
+        analyze a candidate's facial expressions, tone of voice, and word choice
+        to predict job performance. After widespread criticism and a 2019
+        complaint filed by the Electronic Privacy Information Center, HireVue
+        announced in early 2021 that it would stop using facial analysis, though
+        it continues to use audio and linguistic analysis (Harwell).
+      </p>
+
+      <p>
+        Amazon's 2018 scrapped AI hiring tool is the best-known cautionary tale.
+        Amazon trained a model on a decade of hiring data and discovered the
+        model had taught itself to downgrade resumes containing the word
+        <em>"women's"</em> because the historical training data reflected a
+        male-dominated workforce (Dastin). Amazon scrapped the tool, but only
+        after years of use. The model was doing exactly what it was trained to
+        do; the training data was the discriminatory artifact.
+      </p>
+
+      <h3>My specific case</h3>
+
+      <p>
+        Over the past year I applied to more than fifty roles — technology
+        consultant and IT consultant / manager internship positions — across
+        automotive manufacturing, healthcare systems, banks, data companies, and
+        other industries. Every application went through an online portal backed
+        by an ATS. A subset required a one-way video interview; Northwestern
+        Medicine's is the one I remember most clearly because I recorded myself
+        answering questions with no human on the other end. I was rejected or
+        ghosted by every company that used AI-driven screening.
+      </p>
+
+      <div class="stat-row fade-in">
+        <div class="stat">
+          <div class="num"><span data-count="50">0</span><span style="font-size:0.55em;vertical-align:super;">+</span></div>
+          <div class="label">ATS-screened applications</div>
+        </div>
+        <div class="stat">
+          <div class="num accent">1 hr</div>
+          <div class="label">Fastest rejection received</div>
+        </div>
+        <div class="stat">
+          <div class="num"><span data-count="0">0</span></div>
+          <div class="label">Algorithmic interviews granted</div>
+        </div>
+      </div>
+
+      <p>
+        One of those rejections arrived within an hour of me submitting my
+        application, a response time no human recruiter could achieve on any
+        reasonable workload. That rejection was the product of an algorithm,
+        full stop. The single company that gave me a first-round interview was
+        the only one whose hiring process was entirely human-run: Creative
+        Financial Staffing, where I am now completing an internship.
+        Fifty-plus algorithmic pipelines produced zero interviews. One human
+        pipeline produced an internship.
+      </p>
+    </article>
+
+    <nav class="pager" aria-label="Section navigation">
+      <a href="index.html" class="prev">
+        <span class="dir">← Contents</span>
+        <span class="title">Title page</span>
+      </a>
+      <a href="02-manual-or-automatic.html" class="next">
+        <span class="dir">Chapter 02 →</span>
+        <span class="title">Manual or Automatic?</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <span>Ethan Pairitz · INFO&middot;I 202 · Spring 2026</span>
+    <span><a href="index.html">↑ Back to title</a></span>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
